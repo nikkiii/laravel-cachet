@@ -41,7 +41,7 @@ class CachetConnection {
 
 	public function __construct(array $config) {
 		$this->client = new Client([
-			'base_uri' => $config['base_uri'],
+			'base_uri' => rtrim($config['base_uri'], '/') . '/',
 			'headers' => [
 				'X-Cachet-Token' => $config['token']
 			]
