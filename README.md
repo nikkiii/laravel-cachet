@@ -142,4 +142,4 @@ This library may move to Laravel's Collections in the future to better support a
 
 ## License
 
-Laravel DigitalOcean is licensed under [The MIT License (MIT)](LICENSE).
+Laravel Cachet is licensed under [The ISC License (ISC)](LICENSE).
