@@ -11,7 +11,7 @@ Laravel Cachet is a Cachet API wrapper for Laravel 5. It utilises Graham Campbel
 To get the latest version of Laravel Cachet, simply add the following line to the require block of your `composer.json` file:
 
 ```
-"nikkiii/cachet": "~1.0"
+"nikkiii/cachet": "~1.0.1"
 ```
 
 Once Laravel Cachet is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
