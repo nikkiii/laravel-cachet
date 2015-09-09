@@ -9,6 +9,7 @@
  * file that was distributed with this source code.
  */
 
+use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -79,7 +80,7 @@ class CachetServiceProvider extends ServiceProvider {
 			$manager = $app['cachet'];
 			return $manager->connection();
 		});
-		$app->alias('cachet.connection', DigitalOceanV2::class);
+		$app->alias('cachet.connection', CachetConnection::class);
 	}
 
 	/**
