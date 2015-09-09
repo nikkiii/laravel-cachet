@@ -1,4 +1,4 @@
-Laravel DigitalOcean
+Laravel Cachet
 ====================
 
 Laravel Cachet is a Cachet API wrapper for Laravel 5. It utilises Graham Campbell's [Laravel Manager](https://github.com/GrahamCampbell/Laravel-Manager) package.
