@@ -18,7 +18,7 @@ Once Laravel Cachet is installed, you need to register the service provider. Ope
 
 * `Nikkiii\Cachet\CachetServiceProvider::class`
 
-You can register the DigitalOcean facade in the `aliases` key of your `config/app.php` file if you like.
+You can register the Cachet facade in the `aliases` key of your `config/app.php` file if you like.
 
 * `'Cachet' => Nikkiii\Cachet\Facades\Cachet::class`
 
@@ -65,7 +65,7 @@ This class contains no public methods of interest. This class should be added to
 Here you can see an example of just how simple this package is to use. Out of the box, the default adapter is `main`. After you enter your authentication details in the config file, it will just work:
 
 ```php
-use Nikkiii\Cachet\Facades\DigitalOcean;
+use Nikkiii\Cachet\Facades\Cachet;
 // you can alias this in config/app.php if you like
 
 // all calls will return either an array if it's a list, or stdClass object if it's data.
@@ -84,7 +84,7 @@ Cachet::incidents();
 The cachet manager will behave like it is a `\Nikkiii\Cachet\CachetConnection` class. If you want to call specific connections, you can do with the `connection` method:
 
 ```php
-use Nikkiii\Cachet\Facades\DigitalOcean;
+use Nikkiii\Cachet\Facades\Cachet;
 
 // the alternative connection is the other example provided in the default config
 Cachet::connection('alternative')->components();
@@ -93,7 +93,7 @@ Cachet::connection('alternative')->components();
 With that in mind, note that:
 
 ```php
-use Nikkiii\Cachet\Facades\DigitalOcean;
+use Nikkiii\Cachet\Facades\Cachet;
 
 // writing this:
 Cachet::connection('main')->components();
