@@ -1,7 +1,6 @@
 {
 	"name": "nikkiii/laravel-cachet",
 	"description": "Cachet adapter for Laravel",
-	"minimum-stability": "dev",
 	"license": "ISC",
 	"authors": [
 		{
@@ -11,7 +10,7 @@
 	],
 	"require": {
 		"php": ">=5.5.9",
-		"graham-campbell/manager": "v2.2.0",
+		"graham-campbell/manager": "~2.2",
 		"guzzlehttp/guzzle": "~6.0"
 	},
 	"autoload": {
