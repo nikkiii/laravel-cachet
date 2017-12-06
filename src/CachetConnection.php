@@ -161,7 +161,7 @@ class CachetConnection {
 	 * @throws CachetException If the status code returned wasn't what we expected.
 	 */
 	public function createIncident($name, $message, $status, $visible = true, $component_id = 0, $notify = false) {
-		return $this->create(self::COMPONENT, compact('name', 'message', 'status', 'visible', 'component_id', 'notify'));
+		return $this->create(self::INCIDENT, compact('name', 'message', 'status', 'visible', 'component_id', 'notify'));
 	}
 
 	/**
